@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medias on HTML 5</title>
+  </head>
+  <body>
+    <h1>Dynamic Image</h1>
+    <p>
+      Try to open this website on differents devices or simply increase or
+      decrease the size of your browser page.
+    </p>
+
+    <picture>
+      <source
+        media="(max-width:720px)"
+        srcset="images/photo-p.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width:1050px)"
+        srcset="images/photo-m.png"
+        type="image/png"
+      />
+      <img src="images/photo-g.png" alt="Flexible image" />
+    </picture>
+
+    <h1>Using Audio</h1>
+    <p>We are going to learn how to use audio on your HTML5 code.</p>
+    <audio preload="metadata" autoplay controls loop>
+      <source src="media/guanacast-33.mp3" type="audio/mpeg" />
+      <source src="media/guanacast-33.ogg" type="audio/ogg" />
+      <source src="media/guanacast-33.wav" type="audio/wav" />
+      <p>
+        Your browser can't reproduce sound.
+        <a href="media/guanacast-33.mp3"
+          >Click on here to download the MP3 file</a
+        >
+      </p>
+    </audio>
+  </body>
+</html>
