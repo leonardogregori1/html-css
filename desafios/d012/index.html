@@ -9,13 +9,25 @@
 
       @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 
+      :root {
+        --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+        --fonte2: "Passion One", cursive;
+        --fonte3: "Sriracha", cursive;
+      }
+
       * {
         margin: 0;
         padding: 0;
       }
 
+      html,
       body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        min-height: 100vh;
+        background-color: dark;
+      }
+
+      body {
+        font-family: var(--fonte1);
       }
 
       header {
@@ -26,7 +38,7 @@
 
       header h1 {
         padding-top: 50px;
-        font-family: "Passion One", cursive;
+        font-family: var(--fonte2);
         font-variant: small-caps;
         font-size: 10vw;
       }
@@ -35,28 +47,33 @@
         padding-bottom: 50px;
       }
 
-      header a {
+      header a,
+      footer a {
         color: white;
         text-decoration: none;
         font-weight: bolder;
       }
 
-      header a:hover {
+      header a:hover,
+      footer a:hover {
         text-decoration: underline;
       }
 
       section {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
         padding-left: 30px;
-        padding-top: 94.5px;
-        padding-bottom: 94.5px;
+        line-height: 2em;
+        font-size: 3.5vw;
       }
 
       section > p {
-        font-family: "Sriracha";
-        font-size: 7vh;
+        font-family: var(--fonte3);
+        padding-bottom: 2em;
       }
 
       .imagem {
+        box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
         background-position: center center;
         background-attachment: fixed;
         background-size: cover;
@@ -64,7 +81,9 @@
 
       .imagem p {
         display: inline-block;
-        background-color: gray;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.514);
+        text-shadow: 1px 1px 0px black;
         color: white;
       }
 
@@ -84,16 +103,6 @@
       footer p {
         color: white;
         text-align: center;
-      }
-
-      footer a {
-        color: white;
-        text-decoration: none;
-        font-weight: bolder;
-      }
-
-      footer a:hover {
-        text-decoration: underline;
       }
     </style>
   </head>
@@ -142,8 +151,6 @@
           Se o saite é muito bom <br />
           Ele vale um alto preço. <br />
         </p>
-      </section>
-      <section>
         <p>
           Pra piorar a liguagem <br />
           O emoticom é um risco <br />
@@ -176,8 +183,6 @@
           O mundo ficou cativo <br />
           Da tecnologia do agora. <br />
         </p>
-      </section>
-      <section class="normal">
         <p>
           Felizmente, pra orar <br />
           Não precisa de internet <br />
